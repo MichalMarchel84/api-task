@@ -17,7 +17,7 @@ import michalmarchel84.atipera.dto.response.RepositoryInfoDTO;
 public class UserInfoServiceImpl implements UserInfoService{
     @Inject
     @RestClient
-    private final GithubRestClient githubRestClient;
+    private GithubRestClient githubRestClient;
 
     public UserInfoServiceImpl(@RestClient GithubRestClient githubRestClient) {
         this.githubRestClient = githubRestClient;

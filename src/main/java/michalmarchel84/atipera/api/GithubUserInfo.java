@@ -13,7 +13,7 @@ import michalmarchel84.atipera.service.UserInfoService;
 @Path("/api")
 public class GithubUserInfo {
     @Inject
-    private final UserInfoService userInfoService;
+    private UserInfoService userInfoService;
 
     public GithubUserInfo(UserInfoService userInfoService) {
         this.userInfoService = userInfoService;
